@@ -1,0 +1,25 @@
+<?php
+namespace MyGreeter;
+
+class Client
+{
+    public function getGreeting()
+    {
+		$now_time = date('H');
+		
+		if($now_time >= 0 && $now_time <= 12)
+		{
+			echo('早上好');
+		}
+		if($now_time >= 12 && $now_time <= 18)
+		{
+			echo('下午好');
+		}
+		if($now_time >= 18)
+		{
+			echo('晚上好');
+		}
+		
+    }
+
+}
